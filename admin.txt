@@ -1,0 +1,8 @@
+hari id1089 has been added
+room number is 100
+capacity is 2booking room number is:-100
+number of guests:-2
+id of guest1:-100
+id of guest2:-200
+checkin date:-25
+checkout date:-26

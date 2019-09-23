@@ -1,0 +1,80 @@
+Microsoft Windows [Version 10.0.17763.615]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\ROJA>easy_install --version
+setuptools 40.8.0 from c:\users\roja\appdata\local\programs\python\python37-32\lib\site-packages (Python 3.7)
+
+C:\Users\ROJA>pip --version
+pip 19.1.1 from c:\users\roja\appdata\local\programs\python\python37-32\lib\site-packages\pip (python 3.7)
+
+C:\Users\ROJA>django-admin --version
+2.2.3
+
+C:\Users\ROJA>mkvirtualenv hari
+ C:\Users\ROJA\Envs is not a directory, creating
+Using base prefix 'c:\\users\\roja\\appdata\\local\\programs\\python\\python37-32'
+New python executable in C:\Users\ROJA\Envs\hari\Scripts\python.exe
+Installing setuptools, pip, wheel...
+done.
+
+(hari) C:\Users\ROJA>pip install djano
+Collecting djano
+  ERROR: Could not find a version that satisfies the requirement djano (from versions: none)
+ERROR: No matching distribution found for djano
+
+(hari) C:\Users\ROJA>pip install django
+Collecting django
+  Using cached https://files.pythonhosted.org/packages/39/b0/2138c31bf13e17afc32277239da53e9dfcce27bac8cb68cf1c0123f1fdf5/Django-2.2.3-py3-none-any.whl
+Collecting sqlparse (from django)
+  Using cached https://files.pythonhosted.org/packages/ef/53/900f7d2a54557c6a37886585a91336520e5539e3ae2423ff1102daf4f3a7/sqlparse-0.3.0-py2.py3-none-any.whl
+Collecting pytz (from django)
+  Using cached https://files.pythonhosted.org/packages/3d/73/fe30c2daaaa0713420d0382b16fbb761409f532c56bdcc514bf7b6262bb6/pytz-2019.1-py2.py3-none-any.whl
+Installing collected packages: sqlparse, pytz, django
+Successfully installed django-2.2.3 pytz-2019.1 sqlparse-0.3.0
+
+(hari) C:\Users\ROJA>
+
+(hari) C:\Users\ROJA>mkdir projects
+
+(hari) C:\Users\ROJA>cd projects
+
+(hari) C:\Users\ROJA\projects>django-admin startproject hari
+
+(hari) C:\Users\ROJA\projects>cd hari
+
+(hari) C:\Users\ROJA\projects\hari>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+(hari) C:\Users\ROJA\projects\hari>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 6E73-904C
+
+ Directory of C:\Users\ROJA\projects\hari
+
+13-07-2019  20:41    <DIR>          .
+13-07-2019  20:41    <DIR>          ..
+13-07-2019  20:41    <DIR>          hari
+13-07-2019  20:41               645 manage.py
+               1 File(s)            645 bytes
+               3 Dir(s)  457,231,249,408 bytes free
+
+(hari) C:\Users\ROJA\projects\hari>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+July 13, 2019 - 20:45:33
+Django version 2.2.3, using settings 'hari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[13/Jul/2019 20:48:53] "GET / HTTP/1.1" 200 16348
+[13/Jul/2019 20:48:53] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[13/Jul/2019 20:48:53] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[13/Jul/2019 20:48:53] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[13/Jul/2019 20:48:53] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+Not Found: /favicon.ico
+[13/Jul/2019 20:48:53] "GET /favicon.ico HTTP/1.1" 404 1970
